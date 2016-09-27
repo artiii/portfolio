@@ -17,7 +17,7 @@ module.exports = function() {
         // Pipe CSS stream through CSS optimizer and onto disk
         spriteData.css
             .pipe($.gp.csso())
-            .pipe($.gulp.dest('./source/style'));
+            .pipe($.gulp.dest('./source/style/common'));
 
         // Return a merged stream to handle both `end` events
         // return $.gp.merge(imgStream, cssStream);

@@ -6,7 +6,7 @@
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
 
   &_text {
-    font: 45px 'Arial', sans-serif;
+    font: 45px robotolight_italic;
     color: #fff;
   }
 
@@ -25,3 +25,5 @@
 .greating_picture.m--show {
   transform: translate3D(0, 0, 0);
 }
+
+
