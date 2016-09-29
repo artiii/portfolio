@@ -1,8 +1,22 @@
 body {
   margin: 0;
 }
+$green-dark: rgb(78, 136, 57);
+$green: rgb(108, 156, 90);
+$black: rgba(0, 0, 0, 0.8);
+$white: rgb(255, 255, 255);
+$grey: rgb(55, 62, 66);
+$beige: rgb(235, 239, 226);
+
 
 // layout
 @import "common/fonts";
-@import 'common/greating';
-@import 'common/sprite';
+@import "common/adjustment";
+//@import 'common/sprite';
+@import "common/mixins";
+
+//section
+@import "common/header";
+@import "common/content-my-work";
+@import "common/what-about";
+@import "common/form";

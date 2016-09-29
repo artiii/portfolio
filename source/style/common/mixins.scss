@@ -1,0 +1,8 @@
+/*clearfix doesn't support IE<8*/
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

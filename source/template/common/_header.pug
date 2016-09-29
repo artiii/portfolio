@@ -1,0 +1,31 @@
+header.header
+  div.header__container
+    div.wrapper__menu
+      div.header__contacts
+        ul.contacts__list
+          li.contacts__item
+            a.contacts__link(href='#')
+              //img(src=)
+              +icon('vk', 'contacts__icons-menu')
+          li.contacts__item
+            a.contacts__link(href='#')
+              +icon('github', 'contacts__icons-menu')
+          li.contacts__item
+            a.contacts__link(href='#')
+              +icon('in', 'contacts__icons-menu')
+      div.header__menu
+        a.menu__link(href='#')
+          +icon('hamburger')
+    div.wrapper__desc
+      div.desc__avatar
+        img.avatar__foto(src='./assets/img/pic/ava.png', alt='This is me')
+      div.desc__text
+        div.desc__name Шайдулин Артур
+        div.desc__desc-text Личный сайт веб разработчика
+    //div.header__text-bg
+    //  +icon('portfolio_header')
+    div.header__arrow-down
+      a.arrow-down__link(href='#')
+        +icon('portf-arrow-down')
+
+

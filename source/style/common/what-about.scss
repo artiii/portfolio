@@ -1,0 +1,90 @@
+.container__what-about {
+  background-image: url("../../assets/img/pic/What-about-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.what-about__title {
+  font-family: sansus_webissimoregular;
+  font-size: 63px;
+  text-align: center;
+  color: $grey;
+  padding-top: 72px;
+  padding-bottom: 70px;
+  margin: 0;
+  width: 350px;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.desc__list {
+  @extend %clearfix;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 70px;
+}
+
+.desc__item {
+  display: inline-block;
+  max-width: 380px;
+  float: left;
+  padding-right: 19px;
+}
+
+.desc__what-about-avatar {
+  overflow: hidden;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  display: inline-block;
+  position: relative;
+  left: 40%;
+  padding-bottom: 10px;
+}
+
+.what-about-avatar__foto {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.desc__text-what-about {
+  font-family: robotoitalic;
+  font-size: 16px;
+  color: rgb(93, 90, 85);
+  text-align: left;
+  line-height: 1.625;
+  padding-bottom: 20px;
+}
+
+.name-what-about__who {
+  font-size: 16px;
+  font-family: robotobold_italic;
+  color: rgb(78, 136, 57);
+  text-align: center;
+  margin: 0;
+  padding-bottom: 5px;
+
+}
+.name-what-about__what-do {
+  font-size: 16px;
+  font-family: robotoitalic;
+  color: $grey;
+  text-align: center;
+  margin: 0;
+}
+
+.header__arrow-up {
+  //position: relative;
+  //left: 50%;
+  height: 26px;
+  //top: 125px;
+}
+
+.arrow-down__link {
+}
+
+.icon-portf-arrow-up {
+  width: 26px;
+  fill: $white;
+}

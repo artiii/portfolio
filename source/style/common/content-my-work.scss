@@ -1,0 +1,77 @@
+.my-works__title {
+  font-family: sansus_webissimoregular;
+  font-size: 63px;
+  text-align: center;
+  color: $grey;
+  padding-top: 72px;
+  padding-bottom: 70px;
+  background: rgb(248, 249, 245);
+  margin: 0;
+}
+
+.my-works__slider {
+  height: 746px;
+  @extend %clearfix;
+  width: 100%;
+  background-color: $beige;
+}
+
+.slider__left {
+  width: 50%;
+  display: inline-block;
+  float: left;
+}
+
+.slider__img {
+  position: relative;
+  top: 87px;
+  left: 15%;
+}
+
+.slider__right {
+  width: 50%;
+  display: inline-block;
+}
+
+
+.work__title {
+  font-family: sansus_webissimoregular;
+  font-size: 35px;
+  color: $grey;
+  padding:250px 0 60px 0;
+  width: 350px;
+}
+
+.work__technology {
+  font-family: sansus_webissimoregular;
+  font-size: 16px;
+  color: $green;
+  display: block;
+  padding-bottom: 60px;
+}
+
+.block__button {
+  display: inline-block;
+  height: 45px;
+  background-color: $green;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 7px 20px 0 20px;
+}
+
+.button__link {
+  text-decoration: none;
+}
+
+.icon-link {
+  width: 20px;
+  height: 20px;
+  fill: $white;
+  padding-right: 11px;
+}
+
+.button__text {
+  font-family: robotomedium;
+  font-size: 16px;
+  color: $white;
+}
