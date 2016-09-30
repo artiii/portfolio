@@ -1,0 +1,149 @@
+footer {
+
+}
+
+.footer__container {
+
+}
+
+.footer__top {
+  background: rgba($grey, 0.85);
+  min-height: 147px;
+}
+
+.footer__list {
+  @extend %clearfix;
+  max-width: 1683px;
+  margin: 0 auto;
+  padding: 25px 0 0 30px;
+}
+
+.footer__item {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer__item-desc {
+  padding-right: 250px;
+}
+
+.item__desc {
+  max-width: 350px;
+}
+
+.item__desc-text {
+  font-family: robotolight_italic;
+  font-size: 16px;
+  color: rgba($white, 0.5);
+}
+
+.footer__item {
+
+}
+
+.footer__item-menu {
+  padding-right: 192px;
+}
+
+.item__menu{
+  width: 100%;
+}
+
+.item__menu-nav {
+  padding-bottom: 21px;
+
+}
+
+.menu__list {
+  @extend %clearfix;
+  display: block;
+  margin-right: -40px;
+}
+
+.menu__item {
+  display: inline-block;
+  margin-right: 40px;
+  float: left;
+  //padding-right: 40px;
+}
+
+.menu-nav__link {
+  text-decoration: none;
+}
+
+.menu-nav__text{
+  font-family: robotobold;
+  color: $white;
+  transition: all 0.5s;
+  &:hover {
+    color: rgba($white, 0.5);
+  }
+}
+
+.item__menu-socials {
+
+}
+
+.contacts__list-footer {
+}
+
+
+
+.contacts__icons-menu_footer {
+  height: 25px;
+  fill: rgba($white, 0.5);
+  transition: all .5s;
+  &:hover {
+    fill: rgba($white, 1);
+  }
+}
+
+.icon-github,
+.icon-in {
+  height: 22px;
+}
+
+.contacts__list-footer {
+  max-width: 170px;
+}
+
+.contacts__link-footer {
+
+}
+
+
+.footer__item {
+
+}
+
+.item__desc {
+
+}
+
+.item__desc-text {
+  font-family: robotolight_italic;
+  font-size: 16px;
+  color: rgba($white, 0.5);
+}
+
+.item__desc-author {
+  font-family: robotobold_italic;
+  font-size: 16px;
+  color: rgba($white, 0.5);
+}
+
+.footer__bottom {
+  background: rgba($green, 0.85);
+  min-height: 38px;
+  text-align: center;
+}
+
+.bottom__text {
+  font-family: robotolight;
+  font-size: 16px;
+  color: rgba($white, 1);
+  display: block;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+

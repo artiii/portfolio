@@ -11,6 +11,7 @@ svg {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+  overflow: hidden; /*Фото налазит на мои работы */
 }
 
 .wrapper__menu {
@@ -40,6 +41,10 @@ svg {
 .contacts__icons-menu {
   height: 25px;
   fill: $white;
+  transition: all 0.5s;
+  &:hover {
+    fill: rgba($green, 1);
+  }
 }
 
 .icon-github,
@@ -53,6 +58,7 @@ svg {
   position: relative;
   @extend %clearfix;
   padding-bottom: 120px;
+
 }
 
 .menu__link {
@@ -65,7 +71,10 @@ svg {
 .icon-hamburger {
   //height: 35px;
   fill: $white;
-  //width: 35px;
+  transition: all 0.5s;
+  &:hover {
+    fill: rgba($green, 1);
+  }
 }
 
 .wrapper__desc {
@@ -114,9 +123,14 @@ svg {
 }
 
 .arrow-down__link {
+
 }
 
 .icon-portf-arrow-down {
   width: 26px;
   fill: $white;
+  transition: all 0.5s;
+  &:hover {
+    fill: rgba($green-dark, 1);
+  }
 }

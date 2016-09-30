@@ -1,1 +1,41 @@
-footer.footer
+footer
+    .footer__container
+        .footer__top
+            .footer__list
+                .footer__item.footer__item-desc
+                    .item__desc
+                        span.item__desc-text Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+                .footer__item.footer__item-menu
+                    .item__menu
+                        .item__menu-nav
+                            ul.menu__list
+                                li.menu__item
+                                    a.menu-nav__link(href='#')
+                                        span.menu-nav__text Мои работы
+                                li.menu__item
+                                    a.menu-nav__link(href='#')
+                                        span.menu-nav__text Обо мне
+                                li.menu__item
+                                    a.menu-nav__link(href='#')
+                                        span.menu-nav__text Блог
+                                li.menu__item
+                                    a.menu-nav__link(href='#')
+                                        span.menu-nav__text Авторизация
+                        .item__menu-socials
+                            ul.contacts__list.contacts__list-footer
+                                li.contacts__item.contacts__list-footer
+                                    a.contacts__link.contacts__link-footer(href='#')
+                                        //img(src=)
+                                        +icon('vk', 'contacts__icons-menu_footer')
+                                li.contacts__item.contacts__list-footer
+                                    a.contacts__link.contacts__link-footer(href='#')
+                                        +icon('github', 'contacts__icons-menu_footer')
+                                li.contacts__item.contacts__list-footer
+                                    a.contacts__link.contacts__link-footer(href='#')
+                                        +icon('in', 'contacts__icons-menu_footer')
+                .footer__item
+                    .item__desc
+                        span.item__desc-text Всегда пишите код так, будто сопровождать его будет склонный к насилию психопат, который знает, где вы живете.
+                        span.item__desc-author — Martin Golding
+        .footer__bottom
+            span.bottom__text &copy Артур Шайдулин | Создано с любовью в LoftSchool | 2016

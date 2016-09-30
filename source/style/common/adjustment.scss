@@ -23,7 +23,7 @@ body {
   //min-width: $container-width + 20px;
   //padding-bottom: $footer-height;
   width: 100%;
-  margin-bottom: $footer-height;
+  margin-bottom: -371px;
   &:after {
     content: "";
     display: block;
@@ -53,13 +53,11 @@ ul {
 }
 
 footer {
-  height: $footer-height;
+  //height: $footer-height;
   width: 100%;
-  margin-top: -$footer-height;
+  //margin-top: -$footer-height;
   position: relative;
-  min-width: $container-width + 20px;
-  background-color: rgba($green, 0.1);
-  //opacity: 0.1  ;
+  //min-width: $container-width + 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {

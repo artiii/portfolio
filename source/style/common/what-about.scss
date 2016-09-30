@@ -1,7 +1,10 @@
 .container__what-about {
   background-image: url("../../assets/img/pic/What-about-bg.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  //background-size: cover;
+  background-size: 100%  100%;
+  //background-position: 50%;
+  padding-bottom: 157px;
 }
 
 .what-about__title {
@@ -74,17 +77,24 @@
   margin: 0;
 }
 
-.header__arrow-up {
-  //position: relative;
-  //left: 50%;
-  height: 26px;
-  //top: 125px;
+.what-about__arrow-up {
+  position: relative;
+  left: 50%;
+  padding-bottom: 250px;
+  margin: 0 auto;
 }
 
-.arrow-down__link {
+.arrow-up__link {
+  display: block;
+  width: 26px;
+  height: 26px;
 }
 
 .icon-portf-arrow-up {
   width: 26px;
-  fill: $white;
+  fill: rgba(194, 194, 193, 1);
+  transition: all 0.5s;
+  &:hover {
+    fill: rgba($green-dark, 1);
+  }
 }

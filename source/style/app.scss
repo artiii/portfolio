@@ -9,14 +9,15 @@ $grey: rgb(55, 62, 66);
 $beige: rgb(235, 239, 226);
 
 
-// layout
+// adjustment
 @import "common/fonts";
 @import "common/adjustment";
 //@import 'common/sprite';
 @import "common/mixins";
 
-//section
+//styles
 @import "common/header";
 @import "common/content-my-work";
 @import "common/what-about";
 @import "common/form";
+@import "common/footer";
