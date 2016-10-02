@@ -1,0 +1,95 @@
+//.map {
+//  width: 80%;
+//  height: 300px;
+//  margin: 30px auto;
+//  background: #999;
+//
+//}
+//
+//#map { height: 100%; }
+
+.map-g{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+
+}
+
+.map__container{
+
+}
+
+.map{
+  width: 100%;
+}
+
+.map__contacts{
+  position: absolute;
+  width:379px;
+  height: 312px;
+  background-color: rgba(244, 245, 250, 0.85);
+  top: 31%;
+  left: 40%;
+  border-radius: 5px;
+}
+
+.map__title{
+  font-family: "Sansus Webissimo";
+  font-size: 35px;
+  text-transform: uppercase;
+  color: $grey;
+  text-align: center;
+  padding: 27px 0 55px 0;
+  margin: 0;
+}
+
+.map__list{
+  display: block;
+  box-sizing: border-box;
+  padding: 0 0 0 40px;
+}
+
+.map__item{
+  display: block;
+  padding-bottom: 20px;
+}
+
+.map__link{
+  display: block;
+  text-decoration: none;
+  &:hover {
+    > .map__text{
+      color: $green;
+    }
+
+  }
+}
+
+.fa-skype {
+  color: $green-dark;
+  padding-right: 10px;
+  font-size: 26px;
+}
+
+.fa-envelope {
+  color: $green-dark;
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+.fa-phone {
+  color: $green-dark;
+  padding-right: 10px;
+  font-size: 25px;
+}
+
+.fa-map-marker {
+  color: $green-dark;
+  padding-right: 10px;
+  font-size: 25px;
+}
+
+.map__text {
+  color: $grey;
+  font-size: 16px;
+}

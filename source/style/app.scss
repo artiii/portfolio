@@ -14,6 +14,7 @@ $beige: rgb(235, 239, 226);
 @import "common/adjustment";
 //@import 'common/sprite';
 @import "common/mixins";
+@import "common/font-awesome";
 
 //styles
 @import "common/header";
@@ -21,3 +22,5 @@ $beige: rgb(235, 239, 226);
 @import "common/what-about";
 @import "common/form";
 @import "common/footer";
+@import "common/about-me";
+@import "common/map";
