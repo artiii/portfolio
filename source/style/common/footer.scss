@@ -32,7 +32,7 @@ footer {
 }
 
 .item__desc-text {
-  font-family: robotolight_italic;
+  font-family: robotolight_italic, sans-serif;
   font-size: 16px;
   color: rgba($white, 0.5);
 }
@@ -72,7 +72,7 @@ footer {
 }
 
 .menu-nav__text{
-  font-family: robotobold;
+  font-family: robotobold, sans-serif;
   color: $white;
   transition: all 0.5s;
   &:hover {
@@ -121,13 +121,13 @@ footer {
 }
 
 .item__desc-text {
-  font-family: robotolight_italic;
+  font-family: robotolight_italic, sans-serif;
   font-size: 16px;
   color: rgba($white, 0.5);
 }
 
 .item__desc-author {
-  font-family: robotobold_italic;
+  font-family: robotobold_italic, sans-serif;
   font-size: 16px;
   color: rgba($white, 0.5);
 }
@@ -139,7 +139,7 @@ footer {
 }
 
 .bottom__text {
-  font-family: robotolight;
+  font-family: robotolight, sans-serif;
   font-size: 16px;
   color: rgba($white, 1);
   display: block;

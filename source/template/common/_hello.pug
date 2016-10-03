@@ -1,0 +1,47 @@
+.wrapper__hello
+    form.authorization
+        h2.authorization__title Авторизуйтесь
+        .wrapper__login
+            input.login__input(type="text" placeholder='Логин')
+            .login__icon
+                i.fa.fa-user
+        .wrapper__password
+            input.password__input(type="password" placeholder='Пароль')
+            .login__icon
+                i.fa.fa-key
+        input.checkbox__input(id='check' type='checkbox' name='check')
+        label.checkbox__label(for='check')
+        input.radio-check__input(id='radio1' type='radio' name='radio' value='yes')
+        label.radio-check__label(for='radio1')
+        input.radio-check__input(id='radio2' type='radio' name='radio' value='no')
+        label.radio-check__label(for='radio2')
+        .authorization__buttons
+            a.button__link-authorization.button__link-authorization_back(href='#') На главную
+            a.button__link-authorization.button__link-authorization_login(href='#') Войти
+    .welcome
+        .wrapper__desc.wrapper__desc_hello
+            .desc__avatar.desc__avatar_hello
+                img.avatar__foto.avatar__foto_hello(src='./assets/img/pic/ava.png', alt='This is me')
+            .desc__text.desc__text_hello
+                .desc__name.desc__name_hello Шайдулин Артур
+                .desc__desc-text Личный сайт веб разработчика
+            .hello__contacts
+                ul.hello__contacts.hello__contacts_hello
+                    li.contacts__item
+                        a.contacts__link(href='#')
+                            //img(src=)
+                            +icon('vk', 'contacts__icons-menu')
+                    li.contacts__item
+                        a.contacts__link(href='#')
+                            +icon('github', 'contacts__icons-menu')
+                    li.contacts__item
+                        a.contacts__link(href='#')
+                            +icon('in', 'contacts__icons-menu')
+        .hello__button
+            a.form__button-works.hello__button-item(href='/works.html') Мои работы
+            a.form__button-about.hello__button-item(href='/index.html') Обо мне
+            a.form__button-blog.hello__button-item(href='/blog.html') Блог
+    a.button__link_hello(href='#')
+            span.button__text Авторизоваться
+    .wrapper__copyright
+        span.hello__copyright &copy Владимир Астахов | создано с любовью в LoftSchool | 2016

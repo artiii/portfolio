@@ -28,19 +28,32 @@
   width:379px;
   height: 312px;
   background-color: rgba(244, 245, 250, 0.85);
-  top: 31%;
-  left: 40%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 5px;
 }
 
 .map__title{
-  font-family: "Sansus Webissimo";
+  font-family: "Sansus Webissimo", sans-serif;
   font-size: 35px;
   text-transform: uppercase;
   color: $grey;
   text-align: center;
   padding: 27px 0 55px 0;
   margin: 0;
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    width: 89px;
+    height: 3px;
+    background: $grey;
+    position: absolute;
+    bottom: 24%;
+    right: 50%;
+    transform: translate(50%, 50%);
+  }
 }
 
 .map__list{

@@ -21,12 +21,24 @@
   display: inline-block;
   float: left;
   vertical-align: top;
-  font-family: "Sansus Webissimo";
+  font-family: "Sansus Webissimo", sans-serif;
   font-size: 63px;
   color: $grey;
   width: 40%;
   text-transform: uppercase;
   text-align: center;
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    width: 89px;
+    height: 3px;
+    background: $grey;
+    position: absolute;
+    bottom: 16%;
+    right: 50%;
+    transform: translate(50%, 50%);
+  }
 }
 
 .who-i__desc {
@@ -45,17 +57,29 @@
 }
 
 .who-i__desc-title {
-  font-family: "Sansus Webissimo";
+  font-family: "Sansus Webissimo", sans-serif;
   font-size: 35px;
   color: $grey;
   text-transform: uppercase;
   text-align: center;
   padding-bottom: 18px;
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    width: 89px;
+    height: 3px;
+    background: $grey;
+    position: absolute;
+    bottom: -13%;
+    right: 50%;
+    transform: translate(50%, 50%);
+  }
 
 }
 
 .who-i__desc-text {
-  font-family: robotoregular;
+  font-family: robotoregular, sans-serif;
   font-size: 16px;
   color: $grey;
 }
@@ -71,7 +95,7 @@
 }
 
 .skills__title {
-  font-family: "Sansus Webissimo";
+  font-family: "Sansus Webissimo", sans-serif;
   font-size: 35px;
   color: $grey;
   text-transform: uppercase;
@@ -81,10 +105,22 @@
   margin: 0 auto;
   padding-bottom: 62px;
   padding-top: 9px;
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    width: 89px;
+    height: 3px;
+    background: $grey;
+    position: absolute;
+    bottom: 26%;
+    right: 50%;
+    transform: translate(50%, 50%);
+  }
 }
 
 .skills__desc {
-  font-family: robotoregular;
+  font-family: robotoregular, sans-serif;
   font-size: 16px;
   color: $grey;
   padding-bottom: 57px;
@@ -100,7 +136,7 @@
 }
 
 .frontend__title {
-  font-family: robotomedium;
+  font-family: robotomedium, sans-serif;
   font-size: 28px;
   color: $grey;
   padding-bottom: 20px;
@@ -137,7 +173,7 @@
 }
 
 .item__circles-text {
-  font-family: robotomedium;
+  font-family: robotomedium, sans-serif;
   font-size: 14px;
   color: $green-dark;
   width: 70px;
@@ -153,7 +189,7 @@
 }
 
 .backend__title {
-  font-family: robotomedium;
+  font-family: robotomedium, sans-serif;
   font-size: 28px;
   color: $grey;
   margin: 0;
@@ -179,13 +215,11 @@
 }
 
 .workflow__title {
-  font-family: robotomedium;
+  font-family: robotomedium, sans-serif;
   font-size: 28px;
   color: $grey;
   margin: 0;
   padding-bottom: 20px;
-
-
 }
 
 .workflow__list {

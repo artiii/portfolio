@@ -1,5 +1,5 @@
 .my-works__title {
-  font-family: sansus_webissimoregular;
+  font-family: sansus_webissimoregular, sans-serif;
   font-size: 63px;
   text-align: center;
   color: $grey;
@@ -7,6 +7,18 @@
   padding-bottom: 70px;
   background: rgb(248, 249, 245);
   margin: 0;
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    width: 89px;
+    height: 3px;
+    background: $grey;
+    position: absolute;
+    bottom: 24%;
+    right: 50%;
+    transform: translate(50%, 50%);
+  }
 }
 
 .my-works__slider {
@@ -35,15 +47,28 @@
 
 
 .work__title {
-  font-family: sansus_webissimoregular;
+  font-family: sansus_webissimoregular, sans-serif;
   font-size: 35px;
   color: $grey;
   padding:250px 0 60px 0;
   width: 350px;
+  position: relative;
+  text-align: center;
+  &:after {
+    content: '';
+    display: block;
+    width: 89px;
+    height: 3px;
+    background: $grey;
+    position: absolute;
+    bottom: 9%;
+    right: 50%;
+    transform: translate(50%, 50%);
+  }
 }
 
 .work__technology {
-  font-family: sansus_webissimoregular;
+  font-family: sansus_webissimoregular, sans-serif;
   font-size: 16px;
   color: $green;
   display: block;
@@ -81,7 +106,7 @@
 }
 
 .button__text {
-  font-family: robotomedium;
+  font-family: robotomedium, sans-serif;
   font-size: 16px;
   color: $white;
 }

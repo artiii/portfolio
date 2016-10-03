@@ -12,6 +12,9 @@ svg {
   background-repeat: no-repeat;
   height: 100vh;
   overflow: hidden; /*Фото налазит на мои работы */
+  min-height: 650px;
+  position: relative;
+
 }
 
 .wrapper__menu {
@@ -79,7 +82,10 @@ svg {
 
 .wrapper__desc {
   width: 400px;
-  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .desc__avatar {
@@ -89,7 +95,8 @@ svg {
   width: 140px;
   display: inline-block;
   position: relative;
-  left: 34%;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .avatar__foto {
@@ -104,22 +111,52 @@ svg {
 .desc__name{
   text-align: center;
   color: $white;
-  font-family: robotomedium;
+  font-family: robotomedium, sans-serif;
   font-size: 35px;
 }
 
 .desc__desc-text{
   text-align: center;
   color: $white;
-  font-family: robotomedium;
+  font-family: robotomedium, sans-serif;
+  font-size: 16px;
+}
+.desc__name_blog{
+  text-align: center;
+  color: $white;
+  font-family: "Sansus Webissimo", sans-serif;
+  font-size: 63px;
+  text-transform: uppercase;
+  margin-bottom: 64px;
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    width: 89px;
+    height: 3px;
+    background: $white;
+    position: absolute;
+    bottom: -26%;
+    right: 50%;
+    transform: translate(50%, 50%);
+  }
+}
+
+.desc__desc-text_blog{
+  text-align: center;
+  color: $white;
+  font-family: robotomedium, sans-serif;
   font-size: 16px;
 }
 
+
 .header__arrow-down {
-  position: relative;
-  left: 50%;
   height: 26px;
-  top: 125px;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+
 }
 
 .arrow-down__link {
@@ -133,4 +170,25 @@ svg {
   &:hover {
     fill: rgba($green-dark, 1);
   }
+}
+
+.header__triangle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: -4px;
+}
+
+.header__triangle-svg {
+  fill: rgb(248, 249, 245);
+}
+
+
+.triangle-svg__left {
+  fill: rgb(235, 239, 226);
+}
+
+.triangle-svg__right {
+  fill: rgb(244, 245, 240);
 }
