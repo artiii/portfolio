@@ -18,6 +18,11 @@
   transform: translate(-50%, -50%);
   border-radius: 4px;
   display: block;
+  @include phones() {
+    margin: 0 auto;
+    max-width: 380px;
+    width: 96%;
+  }
 }
 
 .wrapper__desc_hello {
@@ -38,6 +43,9 @@
   font-family: robotomedium, sans-serif;
   font-size: 28px;
   margin-bottom: 8px;
+  @include phones() {
+    font-size: 21px;
+  }
 
 }
 
@@ -78,6 +86,9 @@
   color: $white;
   opacity: 0.9;
   cursor: pointer;
+  @include phones() {
+    font-size: 14px;
+  }
 }
 
 .form__button-works {
@@ -86,6 +97,9 @@
 
   &:hover {
     background-color: rgb(78, 136, 57);
+  }
+  @include phones() {
+    padding: 0px 0 0 5%;
   }
 }
 
@@ -114,7 +128,7 @@
   right: 100px;
   top: 24px;
   text-decoration: none;
-  padding: 12px 28px;
+  padding: 12px 14px;
   display: inline-block;
   position: absolute;
   border: 1px solid white;
@@ -124,12 +138,20 @@
     background: $green-dark;
     border: 1px solid $green;
   }
+  @include phones() {
+    right: 50%;
+    transform: translateX(50%);
+
+  }
 }
 
 .button__text {
   font-family: robotomedium, sans-serif;
   font-size: 16px;
   color: $white;
+  @include phones() {
+    font-size: 14px;
+  }
 }
 
 
@@ -140,6 +162,10 @@
   bottom: 40px;
   left: 50%;
   transform: translate(-50%, -50%);
+  @include phones() {
+    font-size: 14px;
+    bottom: 0;
+  }
 
 }
 
@@ -153,6 +179,12 @@
   transform: translate(-50%, -50%);
   border-radius: 4px;
   display: none;
+  @include phones() {
+    margin: 0 auto;
+    max-width: 380px;
+    width: 96%;
+
+  }
 }
 
 /*authorization*/
@@ -165,6 +197,21 @@
   text-align: center;
   margin-top: 35px;
   margin-bottom: 60px;
+  position: relative;
+  &:after {
+    content: '';
+    display: block;
+    width: 89px;
+    height: 3px;
+    background: $white;
+    position: absolute;
+    bottom: -60%;
+    right: 50%;
+    transform: translate(50%, 50%);
+  }
+  @include phones() {
+    font-size: 21px;
+  }
 }
 
 .wrapper__login,
@@ -174,6 +221,10 @@
   width: 340px;
   margin: 0 auto;
   margin-bottom: 20px;
+  @include phones() {
+    width: 95%;
+
+  }
 
 }
 
@@ -197,6 +248,9 @@
   &:focus {
     border: 1px solid $green;
     box-sizing: border-box;
+  }
+  @include phones() {
+    font-size: 14px;
   }
 }
 
@@ -245,6 +299,9 @@
   color: $white;
   opacity: 0.9;
   cursor: pointer;
+  @include phones() {
+    font-size: 14px;
+  }
 }
 
 .hello__button{
@@ -253,6 +310,9 @@
   width: 100%;
   position: absolute;
   bottom: 0;
+  @include phones() {
+    font-size: 14px;
+  }
 }
 
 

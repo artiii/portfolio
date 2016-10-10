@@ -1,13 +1,17 @@
 section.my-works
-    .container
+    .container__my-work
         h2.my-works__title МОИ РАБОТЫ
+            .my-works__text-bg
+                +icon('works-header')
         .my-works__slider
             .slider__left
-                img.slider__img(src='./assets/img/pic/work-1.png')
+                .left__wrapper
+                    img.slider__img(src='./assets/img/pic/work-1.png', alt='My works')
             .slider__right
-                h2.work__title САЙТ ШКОЛЫ ОНЛАЙН ОБРАЗОВАНИЯ
-                span.work__technology HTML , CSS, JAVASCRIPT
-                .block__button
-                    a.button__link(href='#')
-                        +icon('link')
-                        span.button__text Посмотреть сайт
+                .right__wrapper
+                    h2.work__title САЙТ ШКОЛЫ ОНЛАЙН ОБРАЗОВАНИЯ
+                    span.work__technology HTML , CSS, JAVASCRIPT
+                    .block__button
+                        a.button__link(href='#')
+                            +icon('link')
+                            span.button__text Посмотреть сайт

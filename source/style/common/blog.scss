@@ -1,18 +1,24 @@
 .blog {
-  padding-top: 30px;
+  padding-top: 60px;
   background: rgb(250, 248, 240);
 
 }
 
 .blog__container {
   @extend %clearfix;
+  position: relative;
 }
 
 .blog__aside {
   width: 22%;
   float: left;
   text-align: right;
-  padding-right: 120px;
+  padding-right: 6%;
+  margin-left: 6%;
+  @include tablets {
+    position: absolute;
+    right: 100%;
+  }
 
 }
 
@@ -45,6 +51,18 @@
   box-sizing: border-box;
   float: left;
   margin-bottom: 200px;
+  width: 58%;
+  @include tablets() {
+    float: none;
+    max-width: 720px;
+    margin: 60px 24px 200px 24px;
+    width: 100%;
+  }
+  @include phones() {
+    padding: 0 10px 0 10px;
+    margin-right: 0;
+    margin-left: 0;
+  }
 }
 
 .blog__article {
@@ -58,6 +76,9 @@
   font-size: 35px;
   color: rgb(69, 90, 100);
   margin-bottom: 30px;
+  @include tablets() {
+    font-size: 30px;
+  }
 }
 
 .article__data {
@@ -65,12 +86,21 @@
   font-size: 16px;
   color: rgba($green-dark, 0.7);
   margin-bottom: 30px;
-
+  @include tablets() {
+    font-size: 14px;
+  }
 }
 
 .article__content {
   font-family: robotoregular, sans-serif;
   font-size: 16px;
   color: rgb(69, 90, 100);
-
+  line-height: 1.625;
+  @include tablets() {
+    font-size: 14px;
+  }
+  @include phones() {
+    padding-right: 15px;
+  }
 }
+

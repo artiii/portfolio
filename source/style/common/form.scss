@@ -10,6 +10,11 @@
   border-radius: 5px;
   margin: 0 auto;
   position: relative;
+  @include phones() {
+    width: 95%;
+    box-sizing: border-box;
+    padding: 0 20px;
+  }
 }
 
 .form__title {
@@ -33,6 +38,9 @@
     bottom: 25%;
     right: 50%;
     transform: translate(50%, 50%);
+  }
+  @include phones(){
+    font-size: 21px;
   }
 
 }
@@ -61,7 +69,9 @@
     border: 1px solid $green;
     box-sizing: border-box;
   }
-
+  @include phones() {
+    font-size: 14px;
+  }
 }
 
 .wrapper__email {
@@ -85,6 +95,9 @@
   &:focus {
     border: 1px solid $green;
     box-sizing: border-box;
+  }
+  @include phones() {
+    font-size: 14px;
   }
 }
 
@@ -112,6 +125,9 @@
     border: 1px solid $green;
     box-sizing: border-box;
   }
+  @include phones() {
+    font-size: 14px;
+  }
 }
 
 .form__button-send {
@@ -129,9 +145,11 @@
   bottom: 0;
   left: 0;
   transition: all 0.5s;
-
   &:hover {
     background-color: rgb(78, 136, 57);
+  }
+  @include phones() {
+    width: 49.7%;
   }
 }
 
@@ -152,6 +170,9 @@
   transition: all 0.5s;
   &:hover {
     background-color: rgb(78, 136, 57);
+  }
+  @include phones() {
+    width: 49.7%;
   }
 }
 

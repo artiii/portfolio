@@ -1,9 +1,11 @@
 .container__about-me {
 
   @extend %clearfix;
-  height: 100vh;
+  //height: 100vh;
   //width: $container-width;
   //margin: 0 auto;
+  background: $beige;
+
 }
 
 .about-me__who-i {
@@ -14,6 +16,14 @@
   float: left;
   height: 100%;
   box-sizing: border-box;
+  position: relative;
+  @include tablets() {
+    padding-top: 39px;
+    float: none;
+    max-width: none;
+    vertical-align: baseline;
+
+  }
 }
 
 .who-i__title {
@@ -22,12 +32,13 @@
   float: left;
   vertical-align: top;
   font-family: "Sansus Webissimo", sans-serif;
-  font-size: 63px;
+  font-size: 66px;
   color: $grey;
   width: 40%;
   text-transform: uppercase;
   text-align: center;
   position: relative;
+  z-index: 2;
   &:after {
     content: '';
     display: block;
@@ -35,11 +46,22 @@
     height: 3px;
     background: $grey;
     position: absolute;
-    bottom: 16%;
+    bottom: -21%;
     right: 50%;
     transform: translate(50%, 50%);
   }
+
+  @include desktop() {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+  @include tablets() {
+    font-size: 49px;
+  }
+
 }
+
 
 .who-i__desc {
   display: inline-block;
@@ -48,12 +70,39 @@
   width: 50%;
   padding: 21px 21px 21px 0;
 
+  @include desktop() {
+    display: block;
+    width: 74%;
+    padding-bottom: 0;
+    margin: -5px 64px 0 0;
+  }
+  @include tablets() {
+    margin: 0 auto;
+    min-width: 476px;
+    //width: auto;
+    padding: 0;
+    float: none;
+  }
+
+  @include phones() {
+    width: 100%;
+    min-width: inherit;
+  }
 }
 
 .who-i__avatar {
   width: 100%;
   max-width: 443px;
   padding-bottom: 27px;
+  @include desktop() {
+    padding-bottom: 20px;
+  }
+  @include tablets() {
+    padding-bottom: 50px;
+  }
+  @include phones() {
+    width: 100%;
+  }
 }
 
 .who-i__desc-title {
@@ -75,7 +124,52 @@
     right: 50%;
     transform: translate(50%, 50%);
   }
+  @include desktop() {
+    padding-bottom: 7px;
+    margin: 0;
+  }
+  @include tablets() {
+    font-size: 30px;
+    margin: 0;
+  }
+  @include phones() {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+}
 
+.who-i__desc-text {
+  font-family: robotoregular, sans-serif;
+  font-size: 16px;
+  color: $grey;
+  @include tablets() {
+    font-size: 14px;
+    padding-bottom: 34px;
+  }
+  @include phones() {
+    padding: 0 12px;
+    padding-bottom: 34px;
+  }
+}
+
+.desc__text-about-header {
+  width: 360px;
+  height: 110px;
+  left: 21%;
+  top: 3%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+
+  @include desktop() {
+    left: 52%;
+  }
+  @include phones() {
+    width: 192px;
+  }
+}
+
+.icon-about-header {
+  fill: rgba(147, 196, 46, 0.1);
 }
 
 .who-i__desc-text {
@@ -91,7 +185,11 @@
   background-color: rgb(244, 245, 240);
   height: 100%;
   padding-left: 40px;
-
+  @include tablets() {
+    padding: 0;
+    padding-top: 41px;
+    width: 100%;
+  }
 }
 
 .skills__title {
@@ -117,6 +215,13 @@
     right: 50%;
     transform: translate(50%, 50%);
   }
+  @include tablets() {
+    font-size: 30px;
+    padding-bottom: 29px;
+    &:after {
+      bottom: 13%;
+    }
+  }
 }
 
 .skills__desc {
@@ -124,7 +229,20 @@
   font-size: 16px;
   color: $grey;
   padding-bottom: 57px;
-
+  @include tablets() {
+    font-size: 14px;
+    max-width: 462px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  @include tablets() {
+    font-size: 14px;
+    padding-bottom: 28px;
+  }
+  @include phones() {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
 }
 
 .skills__visualization {
@@ -141,19 +259,26 @@
   color: $grey;
   padding-bottom: 20px;
   margin: 0;
-
+  @include tablets() {
+    text-align: center;
+    font-size: 21px;
+  }
 }
 
 .frontend__list {
   @extend %clearfix;
   padding-bottom: 28px;
+  @include tablets() {
+    text-align: center;
+    margin-right: -2.5rem;
+  }
 }
 
 .frontend__item {
   position: relative;
   display: inline-block;
-  padding-right: 40px;
-
+  margin-right: 40px;
+  padding-bottom: 30px;
 }
 
 .item__circles {
@@ -194,20 +319,27 @@
   color: $grey;
   margin: 0;
   padding-bottom: 20px;
+  @include tablets() {
+    text-align: center;
+    font-size: 21px;
 
+  }
 }
 
 .backend__list {
   padding-bottom: 23px;
   @extend %clearfix;
+  @include tablets() {
+    text-align: center;
+    margin-right: -2.5rem;
+  }
 }
 
 .backend__item {
   position: relative;
   display: inline-block;
-  padding-right: 40px;
-
-
+  margin-right: 40px;
+  padding-bottom: 30px;
 }
 
 .visualization__workflow {
@@ -220,16 +352,26 @@
   color: $grey;
   margin: 0;
   padding-bottom: 20px;
+  @include tablets() {
+    text-align: center;
+    font-size: 21px;
+
+  }
 }
 
 .workflow__list {
   padding-bottom: 40px;
   @extend %clearfix;
+  @include tablets() {
+    text-align: center;
+    margin-right: -2.5rem;
+  }
 }
 
 .workflow__item {
   position: relative;
   display: inline-block;
-  padding-right: 40px;
+  margin-right: 40px;
+  padding-bottom: 30px;
 
 }

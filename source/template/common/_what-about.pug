@@ -1,6 +1,8 @@
 section.what-about
     .container__what-about
         h2.what-about__title Что обо мне говорят
+            .what-about__text-bg
+                +icon('about-header')
         .what-about__desc
             .desc__list
                 .desc__item
@@ -8,6 +10,7 @@ section.what-about
                         img.what-about-avatar__foto(src='./assets/img/pic/dima.png', alt='This is me')
                     .desc__text-what-about
                         span Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                        i.fa.fa-quote-left
                     .desc__name-what-about
                         p.name-what-about__who Ковальчук Дмитрий
                         p.name-what-about__what-do — основатель Loftschool
@@ -16,6 +19,7 @@ section.what-about
                         img.what-about-avatar__foto(src='./assets/img/pic/zar.png', alt='This is me')
                     .desc__text-what-about
                         span Этот код выдержет любые испытания. Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                        i.fa.fa-quote-left
                     .desc__name-what-about
                         p.name-what-about__who Зар Захаров
                         p.name-what-about__what-do — преподаватель
@@ -27,7 +31,7 @@ section.what-about
                 input.form__email(id='email' type='email' name='email' placeholder='Email')
                 textarea.form__textarea(placeholder='Ваше сообщение')
                 input.form__button-send(type='submit' name='send' value='Отправить')
-                input.form__button-clear(type='submit' name='clear' value='Очистить')
+                input.form__button-clear(type='reset' name='clear' value='Очистить')
         .what-about__arrow-up
             a.arrow-up__link(href='#')
                 +icon('portf-arrow-up')

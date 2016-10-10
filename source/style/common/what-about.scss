@@ -3,7 +3,7 @@
 }
 
 .container__what-about {
-  background-image: url("../../assets/img/pic/What-about-bg.png");
+  background-image: url("../../assets/img/pic/what-about-bg.png");
   background-repeat: no-repeat;
   //background-size: cover;
   background-size: 100%  100%;
@@ -17,8 +17,8 @@
   font-size: 63px;
   text-align: center;
   color: $grey;
-  padding-top: 72px;
-  padding-bottom: 70px;
+  padding-top: 54px;
+  padding-bottom: 54px;
   margin: 0;
   width: 350px;
   text-transform: uppercase;
@@ -31,10 +31,36 @@
     height: 3px;
     background: $grey;
     position: absolute;
-    bottom: 16%;
+    bottom: 13%;
     right: 50%;
     transform: translate(50%, 50%);
   }
+  @include tablets() {font-size: 49px}
+  @include phones() {
+    width: 190px;
+    font-size: 35px;
+    padding-top: 40px;
+    padding-bottom: 54px;
+    &:after {
+      bottom: 19%;
+    }
+  }
+}
+
+.what-about__text-bg {
+  width: 530px;
+  height: 172px;
+  left: 51%;
+  top: 44%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  @include phones() {
+    width: 250px;
+  }
+}
+
+.icon-about-header {
+  fill: rgba(147, 196, 46, 0.1);
 }
 
 .desc__list {
@@ -42,6 +68,8 @@
   max-width: 800px;
   margin: 0 auto;
   padding-bottom: 70px;
+  @include tablets() {
+  }
 }
 
 .desc__item {
@@ -49,6 +77,14 @@
   max-width: 380px;
   float: left;
   padding-right: 19px;
+  @include tablets() {
+    padding: 0;
+    max-width: 360px;
+    margin-left: 19px;
+  }
+  @include phones() {
+    margin-bottom: 40px;
+  }
 }
 
 .desc__what-about-avatar {
@@ -75,6 +111,23 @@
   text-align: left;
   line-height: 1.625;
   padding-bottom: 20px;
+  position: relative;
+  @include tablets() {font-size: 14px;}
+  @include phones() {
+    font-size: 14px;
+    width: 100%;
+  }
+
+}
+
+.fa-quote-left {
+  position: absolute;
+  left: 0%;
+  top: -10%;
+  font-size: 60px;
+  color: rgba(147, 196, 46, 0.12);
+  transform: translateY(-50%);
+
 }
 
 .name-what-about__who {
@@ -119,6 +172,9 @@
 .what-about__list {
   position: absolute;
   z-index: -1;
+  @include tablets() {
+    display: none;
+  }
 }
 
 .what-about__list_1 {
@@ -134,5 +190,6 @@
 .what-about__list_3 {
   top: 34%;
   right: 17%;
+
 }
 

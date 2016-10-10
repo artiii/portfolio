@@ -10,17 +10,18 @@ $footer-height: 186px;
 $container-width: 1800px;
 
 body {
-//  font-size: 16px;
+  font-size: 16px;
 //  line-height: 1.42;
   -webkit-font-smoothing: antialiased;
 //  background: $white;
+  line-height: normal;
 }
 
 .wrapper {
   min-height: 100%;
   overflow: hidden;
   position: relative;
-  //min-width: $container-width + 20px;
+  //min-width: $container-width;
   //padding-bottom: $footer-height;
   width: 100%;
   margin-bottom: -371px;

@@ -22,10 +22,14 @@ header.header
       div.desc__text
         div.desc__name_blog Блог
         div.desc__desc-text_blog Статьи, которые я написал
-    //div.header__text-bg
-    //  +icon('portfolio_header')
+      .desc__text-blog
+        +icon('blog-header')
     div.header__arrow-down
       a.arrow-down__link(href='#')
         +icon('portf-arrow-down')
+    .header__triangle
+      svg(class="header__triangle-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 85" preserveAspectRatio="none")
+        polygon( points="0,0   0,86   500.8,86   500.8,84.5")
+        polygon( points="1000,0   1000,86   500,86   500,84.5")
 
 
