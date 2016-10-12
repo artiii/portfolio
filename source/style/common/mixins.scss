@@ -26,3 +26,9 @@
     @content;
   }
 }
+
+@mixin phones_340 {
+  @media screen and (max-width: 320px) {
+    @content;
+  }
+}

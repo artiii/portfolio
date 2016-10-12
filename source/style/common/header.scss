@@ -1,22 +1,45 @@
 /*Header*/
 
+
 svg {
   width:100%;
   height: 100%;
 }
 
 .header__container {
-  background-image: url("../../assets/img/pic/water.jpg");
+  //background-image: url("../../assets/img/pic/water.jpg");
   //height: 600px;
-  background-size: cover;
-  background-repeat: no-repeat;
+  //background-size: cover;
+  //background-repeat: no-repeat;
   height: 100vh;
-  overflow: hidden; /*Фото налазит на мои работы */
+  //overflow: hidden; /*Фото налазит на мои работы */
   min-height: 650px;
   position: relative;
+  background: #5f7b48;
+  z-index: -1;
   @include phones() {
     max-width: 600px;
+    min-height: auto;
   }
+}
+
+.Background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.Background::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5), transparent 50%, rgba(0, 0, 0, 0.5));
 }
 
 .wrapper__menu {
@@ -226,7 +249,7 @@ svg {
   bottom: 0;
   left: 0;
   right: 0;
-  margin-bottom: -4px;
+  margin-bottom: -5px;
 }
 
 .header__triangle-svg {

@@ -102,11 +102,13 @@ footer {
 .menu__list {
   @extend %clearfix;
   display: block;
-  margin-right: -40px;
   @include phones() {
     margin: 0 auto;
-    width:386px;
-    margin-right: -1.5rem;
+    width:290px;
+
+  }
+  @include phones_340 {
+    width: 160px;
   }
 }
 
@@ -139,8 +141,8 @@ footer {
 .item__menu-socials {
   padding: 0 61px;
   @include phones() {
-    width: 200px;
-    margin: 0 auto;
+    //width: 200px;
+    //margin: 0 auto;
   }
 }
 
