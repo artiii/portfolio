@@ -24,13 +24,13 @@ section.what-about
                         p.name-what-about__who Зар Захаров
                         p.name-what-about__what-do — преподаватель
         .what-about__form
-            form.form__block(action='#' name='feedback')
+            form.form__block(action='#' name='feedback' id='form-login')
                 h3.form__title Связаться со мной
                 .wrapper__name
-                input.form__name(type='text' id='user-name' name='user-name' placeholder='Имя')
-                input.form__email(id='email' type='email' name='email' placeholder='Email')
-                textarea.form__textarea(placeholder='Ваше сообщение')
-                input.form__button-send(type='submit' name='send' value='Отправить')
+                input.form__name(type='text' id='user-name' name='user-name' placeholder='Имя' data-position='right' data-content="Вы не ввели имя")
+                input.form__email(id='email' type='email' name='email' placeholder='Email' data-position='right' data-content="Вы не ввели Email")
+                textarea.form__textarea(placeholder='Ваше сообщение' data-position='right' data-content="Вы не ввели ваше сообщение")
+                input.form__button-send(type='submit' id='submit' name='send' value='Отправить')
                 input.form__button-clear(type='reset' name='clear' value='Очистить')
         .what-about__arrow-up
             a.arrow-up__link(href='#')

@@ -6,6 +6,6 @@ module.exports = function() {
             .pipe($.gp.sourcemaps.init())
             // .pipe($.gp.concat('app.js'))
             .pipe($.gp.sourcemaps.write())
-            .pipe($.gulp.dest($.config.root + '/assets/other/js'))
+            .pipe($.gulp.dest($.config.root + '/assets/js/other'))
     })
 };

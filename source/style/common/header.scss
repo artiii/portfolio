@@ -8,15 +8,14 @@ svg {
 
 .header__container {
   //background-image: url("../../assets/img/pic/water.jpg");
-  //height: 600px;
+  ////height: 600px;
   //background-size: cover;
   //background-repeat: no-repeat;
   height: 100vh;
-  //overflow: hidden; /*Фото налазит на мои работы */
-  min-height: 650px;
+  overflow: hidden; /*Фото налазит на мои работы */
+  //min-height: 650px;
   position: relative;
-  background: #5f7b48;
-  z-index: -1;
+  //z-index: -1;
   @include phones() {
     max-width: 600px;
     min-height: auto;
@@ -30,6 +29,11 @@ svg {
   bottom: 0;
   left: 0;
   z-index: -1;
+  //background: #5f7b48;
+  background-image: url("../../assets/img/pic/water.jpg");
+  ////height: 600px;
+  //background-size: cover;
+  //background-repeat: no-repeat;
 }
 
 .Background::after {
@@ -268,3 +272,4 @@ svg {
 
   }
 }
+
