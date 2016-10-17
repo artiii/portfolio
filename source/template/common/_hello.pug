@@ -1,14 +1,14 @@
 .wrapper__hello
     .Background
         canvas.Background-canvas
-    form.authorization
+    form.authorization(action='' name='feedback' id='form-login')
         h2.authorization__title Авторизуйтесь
         .wrapper__login
-            input.login__input(type="text" placeholder='Логин')
+            input.login__input(type="text" placeholder='Логин' data-position='right' data-content="Вы не ввели логин")
             .login__icon
                 i.fa.fa-user
         .wrapper__password
-            input.password__input(type="password" placeholder='Пароль')
+            input.password__input(type="password" placeholder='Пароль' data-position='right' data-content="Вы не ввели пароль")
             .login__icon
                 i.fa.fa-key
         input.checkbox__input(id='check' type='checkbox' name='check')

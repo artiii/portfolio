@@ -60,17 +60,52 @@
   }
 }
 
+
+.my-works__slider {
+  display: block;
+}
+
+.slider__display {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.slider__list {
+  display: block;
+  @extend %clearfix;
+  //position: relative;
+  //height: 100%;/
+  //width: 10000px;
+
+}
+
+.slider__item {
+  @extend %clearfix;
+  //float: left;
+  display: block;
+
+}
+
 .slider__left {
   width: 50%;
   //display: inline-block;
   float: left;
-  height: 100%;
+  height: 100vh;
   position: relative;
+
+
   @include tablets() {
     width: 100%;
     float: none;
     height: auto;
     position: static;
+  }
+  @include phones {
+
+
+
   }
 }
 
@@ -220,4 +255,58 @@
   font-family: robotomedium, sans-serif;
   font-size: 16px;
   color: $white;
+}
+
+.slider__button-left {
+  width: 100px;
+  color: white;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  cursor: pointer;
+  transition: all 0.5s;
+  &:hover .arrow-left{
+    fill: rgba($green, 1);
+  }
+}
+
+.slider__button-right {
+  width: 100px;
+  height: 100%;
+  color: white;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+  transition: all 0.5s;
+  &:hover .arrow-right{
+    fill: rgba($green, 1);
+  }
+}
+
+
+
+.arrow-right {
+  height: 22px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50% 50%);
+  transform: rotate(-90deg);
+  cursor: pointer;
+  fill: $white;
+  transition: all 0.5s;
+
+}
+.arrow-left {
+  height: 22px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50% 50%);
+  transform: rotate(90deg);
+  cursor: pointer;
+  transition: all 0.5s;
+  fill: $white;
 }

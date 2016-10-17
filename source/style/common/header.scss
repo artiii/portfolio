@@ -99,6 +99,7 @@ svg {
   right: 0;
   width: 38px;
   height: 38px;
+  z-index: 9;
 }
 
 .icon-hamburger {
@@ -109,6 +110,38 @@ svg {
     fill: rgba($green, 1);
   }
 }
+
+.menu__nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  //background: rgba($green, 0.87);
+  z-index: 5;
+  display: none;
+  animation: curtian .5s forwards;
+
+}
+
+.nav__list {
+  margin-top: 200px ;
+}
+
+.nav__item {
+  text-align: center;
+  padding-bottom: 30px;
+  margin-bottom: 60px;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-size: 63px;
+  color: $white;
+  font-family: "Sansus Webissimo";
+  text-transform: uppercase;
+}
+
 
 .wrapper__desc {
   width: 400px;

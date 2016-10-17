@@ -74,6 +74,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   z-index: 9999;
   background-color: $green-dark;
+  display: none;
 }
 
 .preloader__spinner {
@@ -83,6 +84,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  display: block;
 }
 
 .preloader__animation {

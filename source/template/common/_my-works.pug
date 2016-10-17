@@ -4,14 +4,23 @@ section.my-works
         .my-works__text-bg
             +icon('works-header')
         .my-works__slider
-            .slider__left
-                .left__wrapper
-                    img.slider__img(src='./assets/img/pic/work-1.png', alt='My works')
-            .slider__right
-                .right__wrapper
-                    h2.work__title САЙТ ШКОЛЫ ОНЛАЙН ОБРАЗОВАНИЯ
-                    span.work__technology HTML , CSS, JAVASCRIPT
-                    .block__button
-                        a.button__link(href='#')
-                            +icon('link')
-                            span.button__text Посмотреть сайт
+            .slider__display
+                ul.slider__list
+                    li.slider__item
+                        .slider__left
+                            .left__wrapper
+                                img.slider__img.animated(src='./assets/img/pic/work-1.png', alt='My works')
+                        .slider__right
+                            .right__wrapper
+                                h2.work__title.animated САЙТ ШКОЛЫ ОНЛАЙН ОБРАЗОВАНИЯ
+                                span.work__technology HTML , CSS, JAVASCRIPT
+                                .block__button
+                                    a.button__link(href='#')
+                                        +icon('link')
+                                        span.button__text Посмотреть сайт
+                a.slider__button-left
+                    +icon('arrow-down', 'arrow-left')
+                a.slider__button-right
+                    +icon('arrow-down', 'arrow-right')
+
+
