@@ -11,71 +11,71 @@ function initMap() {
 }
 
 /*preloader*/
-//
-//
-// var preloader = (function () {
-//   var
-//       imgs = [],
-//       percentsTotal = 1,
-//       _findUrlImg = function (){
-//         $.each($('*'), function () {
-//           var
-//               $this = $(this),
-//               background = $this.css('background-image'),
-//               img = $this.is('img');
-//
-//           if (background != 'none') {
-//             var path = background.replace('url("', '').replace('")', '');
-//             imgs.push(path);
-//           }
-//
-//           if (img) {
-//             var path = $this.attr('src');
-//             if (path) {
-//               imgs.push(path);
-//             }
-//           }
-//         });
-//         imgTotal = imgs.length;
-//         return imgs
-//       },
-//       _PerCents = function() {
-//         for (var i = 0; i < imgs.length; i++) {
-//           var image = $('<img>', {
-//             attr: {
-//               src: imgs[i]
-//             }
-//           });
-//
-//           image.on({
-//             load : function () {
-//               setPercents(imgs.length, percentsTotal);
-//               percentsTotal++;
-//             },
-//
-//             error : function () {
-//               percentsTotal++;
-//             }
-//           });
-//         }
-//       },
-//       setPercents = function () {
-//         var percent = Math.ceil(percentsTotal * 100 / imgTotal );
-//         // console.log(percentsTotal);
-//         if (percent >= 100) {
-//           $('.preloader').fadeOut();
-//         }
-//
-//         $('.preloader__percents').text(percent + '%');
-//       },
-//       init = function () {
-//         _findUrlImg();
-//         _PerCents();
-//
-//       };
-//   init();
-//
-// }());
+
+
+var preloader = (function () {
+  var
+      imgs = [],
+      percentsTotal = 1,
+      _findUrlImg = function (){
+        $.each($('*'), function () {
+          var
+              $this = $(this),
+              background = $this.css('background-image'),
+              img = $this.is('img');
+
+          if (background != 'none') {
+            var path = background.replace('url("', '').replace('")', '');
+            imgs.push(path);
+          }
+
+          if (img) {
+            var path = $this.attr('src');
+            if (path) {
+              imgs.push(path);
+            }
+          }
+        });
+        imgTotal = imgs.length;
+        return imgs
+      },
+      _PerCents = function() {
+        for (var i = 0; i < imgs.length; i++) {
+          var image = $('<img>', {
+            attr: {
+              src: imgs[i]
+            }
+          });
+
+          image.on({
+            load : function () {
+              setPercents(imgs.length, percentsTotal);
+              percentsTotal++;
+            },
+
+            error : function () {
+              percentsTotal++;
+            }
+          });
+        }
+      },
+      setPercents = function () {
+        var percent = Math.ceil(percentsTotal * 100 / imgTotal );
+        // console.log(percentsTotal);
+        if (percent >= 100) {
+          $('.preloader').fadeOut();
+        }
+
+        $('.preloader__percents').text(percent + '%');
+      },
+      init = function () {
+        _findUrlImg();
+        _PerCents();
+
+      };
+  init();
+
+}());
 
 /*form*/
 
