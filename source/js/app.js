@@ -1,3 +1,35 @@
+/*flip hello menu*/
+
+(function () {
+  $('.button__link_hello').on('click', function(){
+    if ($('.flipper').hasClass('flip')) {
+      $('.flipper').removeClass('flip');
+      return
+    } else {
+      $('.flipper').addClass('flip');
+    }
+  });
+  $('.button__link-authorization_back').on('click', function () {
+    $('.flipper').removeClass('flip');
+  })
+}());
+
+
+
+/*header menu*/
+$('.menu__link').on('click', function(){
+  $('.menu__nav').toggle()
+});
+
+$('.menu__link').on('click', function(){
+  if ($('.menu__nav').is(':hidden')) {
+    $('.menu__link').removeClass('red');
+    return
+  } else {
+    $('.menu__link').addClass('red');
+  }
+});
+
 /*map*/
 
 function initMap() {
@@ -61,7 +93,7 @@ var preloader = (function () {
       },
       setPercents = function () {
         var percent = Math.ceil(percentsTotal * 100 / imgTotal );
-        // console.log(percentsTotal);
+        console.log(percentsTotal);
         if (percent >= 100) {
           $('.preloader').fadeOut();
         }
@@ -280,3 +312,35 @@ $(document).ready(function(e){
   });
 
 });
+//
+// $('.menu__link').on('click', function(){
+//   if ($('.menu__nav').is(':hidden')) {
+//     $('.menu__link'').removeClass('red')
+//     console.log('hidden');
+//     return
+//   }
+//   $('.menu__link'').addClass('red');
+// });
+
+// $('.menu__nav').on('click', function(){
+//   if ($(this).hasClass('red')) {
+//     $(this).removeClass('red').addClass('green').html('Ещё раз');
+//     return
+//   }
+//   $(this).removeClass('green').addClass('red').html('Нажать');
+// });
+//
+//
+// $('.menu__nav').is(':hidden', function () {
+//   $('menu__link').addClass('red')
+// });
+//
+// $('.menu__link').on('click', function(){
+//   if ($('.menu__nav').is(':hidden')) {
+//     $('.menu__link').removeClass('red');
+//     console.log('hidden');
+//     return
+//   } else {
+//     $('.menu__link'').addClass('red');
+//   }
+// });

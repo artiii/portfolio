@@ -1,49 +1,53 @@
 .wrapper__hello
     .Background
         canvas.Background-canvas
-    form.authorization(action='' name='feedback' id='form-login')
-        h2.authorization__title Авторизуйтесь
-        .wrapper__login
-            input.login__input(type="text" placeholder='Логин' data-position='right' data-content="Вы не ввели логин")
-            .login__icon
-                i.fa.fa-user
-        .wrapper__password
-            input.password__input(type="password" placeholder='Пароль' data-position='right' data-content="Вы не ввели пароль")
-            .login__icon
-                i.fa.fa-key
-        input.checkbox__input(id='check' type='checkbox' name='check')
-        label.checkbox__label(for='check')
-        input.radio-check__input(id='radio1' type='radio' name='radio' value='yes')
-        label.radio-check__label(for='radio1')
-        input.radio-check__input(id='radio2' type='radio' name='radio' value='no')
-        label.radio-check__label(for='radio2')
-        .authorization__buttons
-            a.button__link-authorization.button__link-authorization_back(href='#') На главную
-            a.button__link-authorization.button__link-authorization_login(href='#') Войти
-    .welcome
-        .wrapper__desc.wrapper__desc_hello
-            .desc__avatar.desc__avatar_hello
-                img.avatar__foto.avatar__foto_hello(src='./assets/img/pic/ava.png', alt='This is me')
-            .desc__text.desc__text_hello
-                .desc__name.desc__name_hello Шайдулин Артур
-                .desc__desc-text Личный сайт веб разработчика
-            .hello__contacts
-                ul.hello__contacts.hello__contacts_hello
-                    li.contacts__item
-                        a.contacts__link(href='#')
-                            //img(src=)
-                            +icon('vk', 'contacts__icons-menu')
-                    li.contacts__item
-                        a.contacts__link(href='#')
-                            +icon('github', 'contacts__icons-menu')
-                    li.contacts__item
-                        a.contacts__link(href='#')
-                            +icon('in', 'contacts__icons-menu')
-        .hello__button
-            a.form__button-works.hello__button-item(href='/works.html') Мои работы
-            a.form__button-about.hello__button-item(href='/index.html') Обо мне
-            a.form__button-blog.hello__button-item(href='/blog.html') Блог
+    .flip-container
+        .flipper
+            form.authorization(action='' name='feedback' id='form-login')
+                h2.authorization__title Авторизуйтесь
+                .wrapper__login
+                    input.login__input(type="text" placeholder='Логин' data-position='right' data-content="Вы не ввели логин")
+                    .login__icon
+                        i.fa.fa-user
+                .wrapper__password
+                    input.password__input(type="password" placeholder='Пароль' data-position='right' data-content="Вы не ввели пароль")
+                    .password__icon
+                        i.fa.fa-key
+                input.checkbox__input(id='check' type='checkbox' name='check')
+                label.checkbox__label(for='check') Я человек
+                .radio-check__title Вы точно не робот?
+                .radio-check__wrapper
+                    input.radio-check__input(id='radio1' type='radio' name='radio' value='yes')
+                    label.radio-check__label(for='radio1') Да
+                    input.radio-check__input(id='radio2' type='radio' name='radio' value='no')
+                    label.radio-check__label(for='radio2') Не уверен
+                .authorization__buttons
+                    a.button__link-authorization.button__link-authorization_back(href='#') На главную
+                    a.button__link-authorization.button__link-authorization_login(href='#') Войти
+            .welcome
+                .wrapper__desc.wrapper__desc_hello
+                    .desc__avatar.desc__avatar_hello
+                        img.avatar__foto.avatar__foto_hello(src='./assets/img/pic/ava.png', alt='This is me')
+                    .desc__text.desc__text_hello
+                        .desc__name.desc__name_hello Шайдулин Артур
+                        .desc__desc-text Личный сайт веб разработчика
+                    .hello__contacts
+                        ul.hello__contacts.hello__contacts_hello
+                            li.contacts__item
+                                a.contacts__link(href='#')
+                                    //img(src=)
+                                    +icon('vk', 'contacts__icons-menu')
+                            li.contacts__item
+                                a.contacts__link(href='#')
+                                    +icon('github', 'contacts__icons-menu')
+                            li.contacts__item
+                                a.contacts__link(href='#')
+                                    +icon('in', 'contacts__icons-menu')
+                .hello__button
+                    a.form__button-works.hello__button-item(href='/works.html') Мои работы
+                    a.form__button-about.hello__button-item(href='/index.html') Обо мне
+                    a.form__button-blog.hello__button-item(href='/blog.html') Блог
     a.button__link_hello(href='#')
             span.button__text Авторизоваться
     .wrapper__copyright
-        span.hello__copyright &copy; Владимир Астахов | создано с любовью в LoftSchool | 2016
+        span.hello__copyright &copy; Артур Шайдулин | создано с любовью в LoftSchool | 2016
