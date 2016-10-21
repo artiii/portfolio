@@ -1,4 +1,4 @@
-header.header
+header.header(id='header')
   div.header__container
     .Background
       canvas.Background-canvas
@@ -23,11 +23,11 @@ header.header
             .nav__item
               a.nav__link(href='/works.html') Мои работы
             .nav__item
-              a.nav__link(href='/') Обо мне
+              a.nav__link(href='/about.html') Обо мне
             .nav__item
               a.nav__link(href='/blog.html') Блог
             .nav__item
-              a.nav__link(href='/hello.html') Главная
+              a.nav__link(href='/') Главная
     div.wrapper__desc
       div.desc__avatar
         img.avatar__foto(src='./assets/img/pic/ava.png', alt='This is me')
@@ -39,7 +39,7 @@ header.header
     //div.header__text-bg
     //  +icon('portfolio_header')
     div.header__arrow-down
-      a.arrow-down__link(href='#')
+      a.arrow-down__link(href='#my-works')
         +icon('portf-arrow-down')
     .header__triangle
         svg(class="header__triangle-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 85" preserveAspectRatio="none")

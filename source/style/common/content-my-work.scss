@@ -32,10 +32,10 @@
   width: 500px;
   height: 165px;
   left: 50%;
-  top: 44%;
+  top: 27%;
   transform: translate(-50%, -50%);
   position: absolute;
-  z-index: -1;
+  z-index: 3;
   @include phones() {
     width: 250px;
   }

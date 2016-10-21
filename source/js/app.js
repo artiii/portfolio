@@ -344,3 +344,48 @@ $(document).ready(function(e){
 //     $('.menu__link'').addClass('red');
 //   }
 // });
+
+
+/*blog menu*/
+$(document).scroll(function () {
+  s_top = $("body").scrollTop();
+  id1 = $("#id1").offset().top;
+  id2 = $("#id2").offset().top;
+  id3 = $("#id3").offset().top;
+  id4 = $("#id4").offset().top;
+  if(s_top > id1 && s_top < id2){
+    $('#link-1').addClass('aside-menu__item_active');
+  }else{
+    $('#link-1').removeClass('aside-menu__item_active');
+  }if(s_top > id2 && s_top < id3){
+    $('#link-2').addClass('aside-menu__item_active');
+  }else{
+    $('#link-2').removeClass('aside-menu__item_active');
+  }if(s_top > id3 && s_top < id4){
+    $('#link-3').addClass('aside-menu__item_active');
+  }else{
+    $('#link-3').removeClass('aside-menu__item_active');
+  }if(s_top > id4){
+    $('#link-4').addClass('aside-menu__item_active');
+  }
+});
+
+$(document).scroll(function () {
+  if(s_top > id1){
+    $('.blog__content').addClass('blog__content_fixed');
+    $('.blog__aside').addClass('blog__aside_fixed');
+  }else{
+    $('.blog__content').removeClass('blog__content_fixed');
+    $('.blog__aside').removeClass('blog__aside_fixed');
+  }
+});
+
+// Плавный скролл по якорям
+$(document).ready(function() {
+  $('a[href^="#"]').on('click', function(){
+    var el = $(this).attr('href');
+    $('body').animate({
+      scrollTop: $(el).offset().top}, 1500);
+    return false;
+  });
+});
