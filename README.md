@@ -1,11 +1,24 @@
 #Шайдулин Артур Азатович
 
-install Gulp 4.0:
-1. npm install gulpjs/gulp-cli
-2. npm install gulpjs/gulp#4.0 --save-dev
+## Installing
 
-install project:
-1. clone this repo
-2. cd path/to/
-3. npm install
-4. run "gulp" command to start
+First, you'll need [node.js](https://nodejs.org/), which includes `npm`. Then, open the project folder on the terminal and run:
+
+Stack:
+
+Gulp 4.0
+
+
+Getting started:
+
+`git clone git@github.com:artiii/portfolio.git` ssh
+
+`cd path/to/`
+
+`npm install gulpjs/gulp-cli -g` // Install the latest Gulp CLI tools globally
+
+`npm install gulpjs/gulp#4.0 --save-dev`
+
+`npm install`
+
+
