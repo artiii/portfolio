@@ -222,6 +222,7 @@
   @include phones() {
     font-size: 14px;
     bottom: 0;
+    width: 300px;
   }
 
 }
@@ -247,7 +248,7 @@
 /*authorization*/
 
 .authorization__title {
-  font-family: "Sansus Webissimo";
+  font-family: sansus_webissimoregular;
   font-size: 35px;
   text-transform: uppercase;
   color: white;
@@ -508,6 +509,9 @@ input:checked + label:after {
 
 .button__link-authorization_back {
   border-right: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 0 0 0px 4px;
+  width: 50%;
+  height: 45px;
   &:hover {
     background-color: rgb(78, 136, 57);
   }
@@ -515,7 +519,7 @@ input:checked + label:after {
 
 .button__link-authorization_login {
   border-radius: 0 0 4px 0px;
-  width: 100%;
+  width: 50%;
   height: 45px;
   &:hover {
     background-color: rgb(78, 136, 57);

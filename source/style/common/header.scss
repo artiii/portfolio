@@ -145,6 +145,9 @@ svg {
 
 .nav__list {
   margin-top: 200px ;
+  @include phones {
+    margin-top: 70px;
+  }
 
 }
 
@@ -192,7 +195,7 @@ svg {
   text-decoration: none;
   font-size: 35px;
   color: $white;
-  font-family: "Sansus Webissimo";
+  font-family: sansus_webissimoregular, sans-serif;
   text-transform: uppercase;
   position: relative;
   &:hover {
@@ -279,7 +282,7 @@ svg {
 .desc__name_blog{
   text-align: center;
   color: $white;
-  font-family: "Sansus Webissimo", sans-serif;
+  font-family: sansus_webissimoregular, sans-serif;
   font-size: 63px;
   text-transform: uppercase;
   margin-bottom: 64px;
